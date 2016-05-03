@@ -8,6 +8,7 @@
 //
 
 import Foundation
+import SwiftTryCatch
 #if os(OSX)
     import AppKit
 #elseif os(iOS) || os(tvOS) || os(watchOS)
@@ -301,10 +302,13 @@ public class XCGFileLogDestination: XCGBaseLogDestination {
 
     // MARK: - Misc Methods
     public override func output(logDetails: XCGLogDetails, text: String) {
-
         let outputClosure = {
             if let encodedData = "\(text)\n".dataUsingEncoding(NSUTF8StringEncoding) {
-                self.logFileHandle?.writeData(encodedData)
+                SwiftTryCatch.tryBlock({
+                    self.logFileHandle?.writeData(encodedData)
+                }, catch: { (error) in
+                    print("Attempt to write to log file failed: \(error.description)")
+                }, finally: {})
             }
         }
 

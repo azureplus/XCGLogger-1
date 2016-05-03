@@ -8,6 +8,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SwiftTryCatch.h"
 
 //! Project version number for XCGLogger.
 FOUNDATION_EXPORT double XCGLoggerVersionNumber;

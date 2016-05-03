@@ -19,6 +19,14 @@
 		55E3EE5819D76F280068C3A7 /* XCGLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E3EE5719D76F280068C3A7 /* XCGLoggerTests.swift */; };
 		70C0D5C01B99EAFC00C4F3BA /* XCGLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 55DA396519D7737B0032F026 /* XCGLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70CB94181B99E728007802FF /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554DF40F19D76FA9005708BE /* XCGLogger.swift */; };
+		D34971661CD8040A00ADEEEC /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = D387F9051C9CAD21007B99AF /* SwiftTryCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D34971671CD8040B00ADEEEC /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = D387F9051C9CAD21007B99AF /* SwiftTryCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D34971681CD8040B00ADEEEC /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = D387F9051C9CAD21007B99AF /* SwiftTryCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D34971691CD8041000ADEEEC /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D387F9061C9CAD21007B99AF /* SwiftTryCatch.m */; };
+		D349716A1CD8041000ADEEEC /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D387F9061C9CAD21007B99AF /* SwiftTryCatch.m */; };
+		D349716B1CD8041000ADEEEC /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D387F9061C9CAD21007B99AF /* SwiftTryCatch.m */; };
+		D387F9071C9CAD21007B99AF /* SwiftTryCatch.h in Headers */ = {isa = PBXBuildFile; fileRef = D387F9051C9CAD21007B99AF /* SwiftTryCatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D387F9081C9CAD21007B99AF /* SwiftTryCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D387F9061C9CAD21007B99AF /* SwiftTryCatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,9 @@
 		55E3EE5619D76F280068C3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55E3EE5719D76F280068C3A7 /* XCGLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGLoggerTests.swift; sourceTree = "<group>"; };
 		70CB94201B99E728007802FF /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D349717A1CD94D8300ADEEEC /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		D387F9051C9CAD21007B99AF /* SwiftTryCatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftTryCatch.h; sourceTree = "<group>"; };
+		D387F9061C9CAD21007B99AF /* SwiftTryCatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftTryCatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +147,7 @@
 			children = (
 				55E3EE4719D76F280068C3A7 /* XCGLogger */,
 				55E3EE5419D76F280068C3A7 /* XCGLoggerTests */,
+				D387F9041C9CAD21007B99AF /* SwiftTryCatch */,
 				55E3EE4619D76F280068C3A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +201,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D387F9041C9CAD21007B99AF /* SwiftTryCatch */ = {
+			isa = PBXGroup;
+			children = (
+				D387F9051C9CAD21007B99AF /* SwiftTryCatch.h */,
+				D387F9061C9CAD21007B99AF /* SwiftTryCatch.m */,
+				D349717A1CD94D8300ADEEEC /* module.modulemap */,
+			);
+			path = SwiftTryCatch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -197,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E37F621BFC64C600392B9C /* XCGLogger.h in Headers */,
+				D34971681CD8040B00ADEEEC /* SwiftTryCatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DA396B19D7737B0032F026 /* XCGLogger.h in Headers */,
+				D34971661CD8040A00ADEEEC /* SwiftTryCatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +236,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D387F9071C9CAD21007B99AF /* SwiftTryCatch.h in Headers */,
 				55DA396819D7737B0032F026 /* XCGLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C0D5C01B99EAFC00C4F3BA /* XCGLogger.h in Headers */,
+				D34971671CD8040B00ADEEEC /* SwiftTryCatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557C47E41BA125F800C9A174 /* XCGLogger.swift in Sources */,
+				D349716B1CD8041000ADEEEC /* SwiftTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554DF43319D77155005708BE /* XCGLogger.swift in Sources */,
+				D34971691CD8041000ADEEEC /* SwiftTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554DF41019D76FA9005708BE /* XCGLogger.swift in Sources */,
+				D387F9081C9CAD21007B99AF /* SwiftTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70CB94181B99E728007802FF /* XCGLogger.swift in Sources */,
+				D349716A1CD8041000ADEEEC /* SwiftTryCatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +538,7 @@
 				PRODUCT_NAME = XCGLogger;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -529,6 +560,7 @@
 				PRODUCT_NAME = XCGLogger;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -553,6 +585,7 @@
 				PRODUCT_NAME = XCGLogger;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 			};
 			name = Debug;
 		};
@@ -573,6 +606,7 @@
 				PRODUCT_NAME = XCGLogger;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -715,6 +749,7 @@
 				PRODUCT_MODULE_NAME = XCGLogger;
 				PRODUCT_NAME = XCGLogger;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -734,6 +769,7 @@
 				PRODUCT_MODULE_NAME = XCGLogger;
 				PRODUCT_NAME = XCGLogger;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -779,6 +815,7 @@
 				PRODUCT_NAME = XCGLogger;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 			};
@@ -801,6 +838,7 @@
 				PRODUCT_NAME = XCGLogger;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/SwiftTryCatch";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = 4;
 			};
